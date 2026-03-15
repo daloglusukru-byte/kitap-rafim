@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Architect Library | Streaming Reader",
-  description: "Advanced PDF Reader with Global Lofi Radio",
+  title: "Kitap Rafım",
+  description: "Kişisel dijital kütüphanem — PDF okuyucu ve radyo",
   manifest: "/manifest.json",
   themeColor: "#000000",
 };
@@ -28,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="tr" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-background text-foreground transition-colors duration-300`}
       >
@@ -36,7 +36,7 @@ export default function RootLayout({
           attribute="class"
           defaultTheme="dark"
           enableSystem
-          themes={['light', 'dark', 'sepia', 'dracula']}
+          themes={['light', 'dark', 'sepia', 'dracula', 'parchment']}
         >
           <TooltipProvider>
             {/* Main Application Area */}
